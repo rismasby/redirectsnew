@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <script>
+        function redirectRandomly() {
+            // Daftar URL yang akan dipilih secara acak
+            var urls = [
+                'https://mobi.ole777bonus.com/#/Home',
+                'https://mobi.gol8211.com/#/Home',
+                'https://mobi.gol8988.store/#/Home'
+            ];
+
+            // Pilih URL secara acak
+            var randomIndex = Math.floor(Math.random() * urls.length);
+
+            // Redirect ke URL yang dipilih
+            window.location.href = urls[randomIndex];
+        }
+
+        // Panggil fungsi redirectRandomly saat halaman dimuat
+        window.onload = redirectRandomly;
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
