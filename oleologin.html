@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://mobi.theslotole.club/#/register">
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <script>
+        function redirectRandomly() {
+            // Daftar URL yang akan dipilih secara acak
+            var urls = [
+                'https://mobi.theslotole.club/#/Home',
+                'https://mobi.albereinstein.shop/#/Home',
+            ];
+
+            // Pilih URL secara acak
+            var randomIndex = Math.floor(Math.random() * urls.length);
+
+            // Redirect ke URL yang dipilih
+            window.location.href = urls[randomIndex];
+        }
+
+        // Panggil fungsi redirectRandomly saat halaman dimuat
+        window.onload = redirectRandomly;
+    </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://mobi.theslotole.club/#/register">click here</a>.</p>
+    <p>Redirecting...</p>
 </body>
 </html>
